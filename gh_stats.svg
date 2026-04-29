@@ -1,0 +1,147 @@
+<svg width="495" height="195" viewBox="0 0 495 195" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+    <title id="title">jansitarski's GitHub Stats</title>
+    <style>
+        .bg { fill: #0D1117; }
+        .border { stroke: rgba(56, 139, 253, 0.4); }
+        .grid-line { stroke: rgba(56, 139, 253, 0.1); }
+        .title, .label { fill: #C9D1D9; }
+        .value { fill: #F0F6FC; }
+        .accent { fill: #58A6FF; }
+        .timestamp { fill: #8B949E; }
+
+        @media (prefers-color-scheme: light) {
+            .bg { fill: #F6F8FA; }
+            .border { stroke: rgba(31, 35, 40, 0.2); }
+            .grid-line { stroke: rgba(31, 35, 40, 0.07); }
+            .title, .label { fill: #57606A; }
+            .value { fill: #1F2328; }
+            .accent { fill: #0969DA; }
+            .timestamp { fill: #656D76; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(8px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Animate the inner group so the CSS transform doesn't override the
+           outer SVG transform attribute that holds the grid position. */
+        .stats-grid > g > g {
+            animation: slideIn 0.5s ease-out forwards;
+            opacity: 0;
+        }
+        .stats-grid > g:nth-child(1) > g { animation-delay: 0.1s; }
+        .stats-grid > g:nth-child(2) > g { animation-delay: 0.15s; }
+        .stats-grid > g:nth-child(3) > g { animation-delay: 0.2s; }
+        .stats-grid > g:nth-child(4) > g { animation-delay: 0.3s; }
+        .stats-grid > g:nth-child(5) > g { animation-delay: 0.35s; }
+        .stats-grid > g:nth-child(6) > g { animation-delay: 0.4s; }
+        .title { animation: fadeIn 0.5s ease-out; }
+
+        .title {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            font-weight: 400;
+            font-size: 16px;
+        }
+        .label {
+            font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .value {
+            font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-weight: 700;
+            font-size: 28px;
+            letter-spacing: -1px;
+        }
+        .timestamp {
+            font-family: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 10px;
+        }
+    </style>
+
+    <defs>
+        <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" class="grid-line" stroke-width="0.5"/>
+        </pattern>
+        <filter id="noise">
+            <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+            <feComposite operator="in" in2="SourceGraphic" result="monoNoise"/>
+            <feBlend in="SourceGraphic" in2="monoNoise" mode="multiply" opacity="0.05" />
+        </filter>
+    </defs>
+
+    <rect x="0.5" y="0.5" width="494" height="194" rx="6" class="bg border" stroke-width="1"/>
+    <rect width="495" height="195" fill="url(#grid)" filter="url(#noise)" clip-path="url(#clip)"/>
+    <clipPath id="clip"><rect x="0.5" y="0.5" width="494" height="194" rx="6"/></clipPath>
+
+    <g transform="translate(25, 25)">
+        <text class="title" x="0" y="16">jansitarski / GitHub Activity</text>
+    </g>
+
+    <!-- 3-column × 2-row grid; columns at x=0, 148, 296 (spacing=148 in 445px work area) -->
+    <g class="stats-grid" transform="translate(25, 55)">
+
+        <!-- Row 1, Col 1: Public Repos -->
+        <g transform="translate(0, 0)">
+            <g>
+                <rect class="accent" x="0" y="5" width="3" height="18" rx="1"/>
+                <text class="value" x="10" y="28">15</text>
+                <text class="label" x="10" y="42">Public Repos</text>
+            </g>
+        </g>
+
+        <!-- Row 1, Col 2: Private Repos -->
+        <g transform="translate(148, 0)">
+            <g>
+                <rect class="accent" x="0" y="5" width="3" height="18" rx="1"/>
+                <text class="value" x="10" y="28">48</text>
+                <text class="label" x="10" y="42">Private Repos</text>
+            </g>
+        </g>
+
+        <!-- Row 1, Col 3: Contributed Repos -->
+        <g transform="translate(296, 0)">
+            <g>
+                <rect class="accent" x="0" y="5" width="3" height="18" rx="1"/>
+                <text class="value" x="10" y="28">54</text>
+                <text class="label" x="10" y="42">Contrib Repos</text>
+            </g>
+        </g>
+
+        <!-- Row 2, Col 1: Merged PRs -->
+        <g transform="translate(0, 60)">
+            <g>
+                <rect class="accent" x="0" y="5" width="3" height="18" rx="1"/>
+                <text class="value" x="10" y="28">448</text>
+                <text class="label" x="10" y="42">Merged PRs</text>
+            </g>
+        </g>
+
+        <!-- Row 2, Col 2: Total Commits -->
+        <g transform="translate(148, 60)">
+            <g>
+                <rect class="accent" x="0" y="5" width="3" height="18" rx="1"/>
+                <text class="value" x="10" y="28">697</text>
+                <text class="label" x="10" y="42">Total Commits</text>
+            </g>
+        </g>
+
+        <!-- Row 2, Col 3: Lines Added -->
+        <g transform="translate(296, 60)">
+            <g>
+                <rect class="accent" x="0" y="5" width="3" height="18" rx="1"/>
+                <text class="value" x="10" y="28">614.8k</text>
+                <text class="label" x="10" y="42">Lines Added</text>
+            </g>
+        </g>
+
+    </g>
+
+    <text class="timestamp" x="470" y="183" text-anchor="end">updated: 2026-04-29</text>
+</svg>
