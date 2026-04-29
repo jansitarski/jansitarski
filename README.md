@@ -1,6 +1,16 @@
 ### Hi, I'm Jan Sitarski 👋
 
-I'm an engineer at the intersection of **AI platforms**, **developer tooling**, and **cloud infrastructure**. I build practical, secure, and useful AI systems, focusing on internal LLM adoption, governance, and platform automation with tools like GitHub Actions, Kubernetes, and AWS.
+I'm based in Gdańsk and work on the Productivity AI team at Zendesk. Most of my time goes into deploying LLM infrastructure and getting AI tools into engineers' hands without breaking things.
+
+**Now:**
+- Internal LLM deployments and API proxies
+- MCP server development
+- Enterprise AI tool rollouts
+
+**Before:**
+- GitHub Enterprise and CI/CD infrastructure
+- Data platform tooling (Snowflake, Datadog)
+- Container migrations and orchestration
 
 <p align="left">
   <a href="https://www.python.org" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
@@ -24,14 +34,6 @@ I'm an engineer at the intersection of **AI platforms**, **developer tooling**, 
 
 ---
 
-### Focus Areas
-
-- **AI platforms** — internal LLM tooling, governance, MCP servers, practical AI adoption
-- **Developer productivity** — GitHub workflows, automation, platform enablement, better engineering feedback loops
-- **Cloud infrastructure** — AWS, Kubernetes, Terraform, and systems that are reliable, observable, and easy to operate
-
----
-
 ### Contact
 
-📍 Gdańsk, Poland · 📫 [jan@sitarski.tech](mailto:jan@sitarski.tech) · 💼 [github.com/jansitarski](https://github.com/jansitarski)
+📫 [jan@sitarski.tech](mailto:jan@sitarski.tech)
