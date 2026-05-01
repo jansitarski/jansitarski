@@ -28,7 +28,7 @@ I'm based in Gdańsk and work on the Productivity AI team at Zendesk. Most of my
 
 <!-- private-stats:start -->
 <p align="center">
-  <img src="./gh_stats.svg" alt="Jan Sitarski GitHub Stats" />
+  <img src="./gh_stats.svg" alt="jansitarski's GitHub Stats" />
 </p>
 <!-- private-stats:end -->
 
