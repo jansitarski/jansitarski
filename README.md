@@ -9,7 +9,7 @@ I'm based in Gdańsk and work on the Productivity AI team at Zendesk. Most of my
 
 **Before:**
 - GitHub Enterprise and CI/CD infrastructure
-- Data platform tooling (Snowflake, Datadog)
+- Enterprise wide platform observability
 - Container migrations and orchestration
 
 <p align="left">
